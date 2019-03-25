@@ -10,17 +10,17 @@ module.exports.ls = () => {
   });
 };
 
-module.exports.touch = () => {
-  fs.writeFile('afile.txt','My name is khang', (err) => {
+module.exports.touch = (afile.txt) => {
+  fs.writeFile(afile.txt,'My name is Brian', (err) => {
       if (err) {
           return `Error: ${err}`;
-      }
+
       console.log('File has been created');
   })
 };
 
-module.exports.mkdir = () => {
-  fs.mkdir('afolder',(err) => {
+module.exports.mkdir = (afolder) => {
+  fs.mkdir(afolder,(err) => {
       if (err) {
           return `Error: ${err}`;
       }
